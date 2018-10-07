@@ -1,0 +1,21 @@
+<% if not @cities.nil? %>
+	<% @cities.each do |c| %>
+
+	<% if not c.nil? %>
+		<h1> <%= c.name %></h1>
+		<p>
+			It's <%= c.temperature %>°F
+			and it looks like <%= c.description %>
+		</p>
+	<% end %>
+	<% end %>
+
+<% else %>
+   <h1>Empty city list please create one </h1>
+<% end %>
+
+<%= form_with local: true, method: "get" do |f| %>
+   City name: <br>
+   <%= f.text_field :city %>
+   <%= f.submit %>
+ <% end %>

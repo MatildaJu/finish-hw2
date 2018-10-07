@@ -8,3 +8,4 @@ This is an example project of a [Ruby on Rails](http://rubyonrails.org) web appl
 - Added the `.gemrc` file to avoid installing documentation to use as less disk space as possible.
 - Includes an axample of a `glitch.json` file allowing the application to run with the default Glitch configuration.# hw2
 # hw2
+# hw2
